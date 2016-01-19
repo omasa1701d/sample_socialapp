@@ -1,0 +1,11 @@
+{
+  "name": "socialapp",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.1",
+    "date-utils": "^1.2.17",
+    "express": "^4.13.3",
+    "jwt-simple": "^0.4.0",
+    "mongoose": "^4.3.1"
+  }
+}

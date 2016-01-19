@@ -1,0 +1,13 @@
+        <div class='container'><!--ng-controllerはルーティングで指定されているので、ここでは不要-->
+            <h1>Recent Posts</h1>
+            <form role='form'>
+                <input ng-model='postBody' class'form-control' /> <!-- ng-modelは$scopeのプロパティへの結びつけ -->
+                <button ng-click='addPost()' class='btn btn-defalult'>Add Post</button>
+            </form>
+            <ul class='list-group'>
+                <li ng-repeat="post in posts | orderBy:'-date'" class='list-group-item'>
+                    <strong>@{{ post.username }}</strong>
+                    <span>{{ post.body }}</span>
+                </li>
+            </ul>
+        </div>
